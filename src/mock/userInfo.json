@@ -1,0 +1,12 @@
+{
+  "error": 0,
+  "data": {
+    "userid": "@id()",
+    "username": "@cname()",
+    "date": "@date()",
+    "avatar": "@image('100x100','#469DE3','#fff','充')",
+    "description": "@paragraph()",
+    "ip": "@ip()",
+    "email": "@email()"
+  }
+}
