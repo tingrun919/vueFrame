@@ -1,8 +1,8 @@
 /**
- * @Author: ZT.zhangteng
+ * @Author: guijixing
  * @Date: 2019-03-28 15:25:20
- * @Last Modified by: ZT.zhangteng
- * @Last Modified time: 2019-03-28 16:44:04
+ * @Last Modified by: guijixing
+ * @Last Modified time: 2019-3-30 16:02:58
  * @Description: 项目VUe配置文件
  */
 const path = require("path");

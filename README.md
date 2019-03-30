@@ -1,6 +1,6 @@
 # vueFrame
 
-基于 vue-cli3+mock+vuex+axios,搭载的 UI 组件 mand-mobile
+基于 vue-cli3+mock+vuex+axios,搭载的 UI 组件 iView
 
 # 欢迎补充
 

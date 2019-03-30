@@ -1,6 +1,8 @@
 import axios from "axios";
 import Vue from "vue";
-
+import { setToken, getToken } from '@/libs/util';
+import qs from 'qs';
+import xss from 'xss';
 let config = {
   baseURL: "",
   timeout: 60 * 1000, // Timeout
