@@ -1,14 +1,14 @@
-import Vue from "vue";
-import Router from "vue-router";
-Vue.use(Router);
+import Vue from 'vue'
+import Router from 'vue-router'
+Vue.use(Router)
 
 export default new Router({
-  mode: "history",
+  mode: 'history',
   routes: [
     {
-      path: "/",
-      name: "index",
-      component: resolve => require(["@/views/home/home.vue"], resolve)
+      path: '/',
+      name: 'index',
+      component: resolve => require(['@/views/home/home.vue'], resolve)
     }
   ]
-});
+})

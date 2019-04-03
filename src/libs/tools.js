@@ -160,11 +160,10 @@ export const on = (function () {
         element.addEventListener(event, handler, false)
       }
     }
-  } else {
-    return function (element, event, handler) {
-      if (element && event && handler) {
-        element.attachEvent('on' + event, handler)
-      }
+  }
+  return function (element, event, handler) {
+    if (element && event && handler) {
+      element.attachEvent('on' + event, handler)
     }
   }
 })()
@@ -179,11 +178,10 @@ export const off = (function () {
         element.removeEventListener(event, handler, false)
       }
     }
-  } else {
-    return function (element, event, handler) {
-      if (element && event) {
-        element.detachEvent('on' + event, handler)
-      }
+  }
+  return function (element, event, handler) {
+    if (element && event) {
+      element.detachEvent('on' + event, handler)
     }
   }
 })()
@@ -194,10 +192,9 @@ export const off = (function () {
  */
 export const hasKey = (obj, key) => {
   if (key) return key in obj
-  else {
-    let keysArr = Object.keys(obj)
-    return keysArr.length
-  }
+
+  let keysArr = Object.keys(obj)
+  return keysArr.length
 }
 
 /**

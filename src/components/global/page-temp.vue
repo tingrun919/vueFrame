@@ -3,7 +3,7 @@
 </template>
 <script>
 export default {
-  name:'page-temp',
+  name: "page-temp",
   props: ["total", "size", "current"],
   data() {
     return {
