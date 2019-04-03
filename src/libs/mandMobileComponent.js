@@ -1,1 +1,1 @@
-import { ActionBar } from "mand-mobile";
+import { ActionBar } from 'mand-mobile'// eslint-disable-line

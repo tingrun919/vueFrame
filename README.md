@@ -1,5 +1,7 @@
 # vueFrame
 
+[![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
 基于 vue-cli3+mock+vuex+axios,搭载的 UI 组件 mand-mobile
 
 # 欢迎补充
