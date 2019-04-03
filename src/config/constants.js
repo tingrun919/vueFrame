@@ -28,7 +28,6 @@ export default {
   INPUT_NUMBER_SIZE,
   DICT_PREFIX,
   phoneReg,
-  saleReg,
   sortReg,
   numReg
 

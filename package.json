@@ -32,7 +32,6 @@
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
     "mockjs": "^1.0.1-beta3",
-    "standard": "^12.0.1",
     "vue-template-compiler": "^2.5.21"
   },
   "eslintConfig": {
@@ -46,9 +45,6 @@
     ],
     "parserOptions": {
       "parser": "babel-eslint"
-    },
-    "rules": {
-      "vue/no-unused-vars": "off"
     }
   },
   "postcss": {

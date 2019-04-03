@@ -86,13 +86,13 @@ export const showTitle = (item, vm) => vm.$config.useI18n ? vm.$t(item.name) : (
  * @description 本地存储和获取标签导航列表
  */
 export const setTagNavListInLocalstorage = list => {
-  localStorage.tagNaveList = JSON.stringify(list)
+  window.localStorage.tagNaveList = JSON.stringify(list)
 }
 /**
  * @returns {Array} 其中的每个元素只包含路由原信息中的name, path, meta三项
  */
 export const getTagNavListFromLocalstorage = () => {
-  const list = localStorage.tagNaveList
+  const list = window.localStorage.tagNaveList
   return list ? JSON.parse(list) : []
 }
 
@@ -210,7 +210,7 @@ export const getArrayFromFile = (file) => {
   let nameSplit = file.name.split('.')
   let format = nameSplit[nameSplit.length - 1]
   return new Promise((resolve, reject) => {
-    let reader = new FileReader()
+    let reader = new window.FileReader()
     reader.readAsText(file) // 以文本格式读取
     let arr = []
     reader.onload = function (evt) {

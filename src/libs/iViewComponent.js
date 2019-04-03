@@ -1,1 +1,1 @@
-import { Button } from 'View'
+export { Button } from 'iview'
