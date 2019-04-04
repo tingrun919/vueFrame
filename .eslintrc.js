@@ -1,6 +1,11 @@
 module.exports = {
   root: true,
   extends: ['plugin:vue/recommended'],
+  "parserOptions": {
+    "parser": "babel-eslint",
+    "ecmaVersion": 2017,
+    "sourceType": "module"
+  },
   rules: {
     // allow async-await
     'generator-star-spacing': 'off',
@@ -22,7 +27,10 @@ module.exports = {
     "vue/html-indent": 'off',
     "vue/script-indent": ["error", 2, { "baseIndent": 1 }],
     "vue/html-closing-bracket-newline": "off",
+    "vue/no-use-v-if-with-v-for": "off",
+    "vue/html-self-closing": "off",
     "spellChecker": "off",
+    "no-console": "off",
     'no-undef': 'off'
   }
 }
