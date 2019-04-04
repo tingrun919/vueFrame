@@ -12,34 +12,15 @@ import Main from '@/components/main'
  */
 
 export default [
-  // {
-  //   path: '/login',
-  //   name: 'login',
-  //   meta: {
-  //     title: 'Login - 登录',
-  //     hideInMenu: true
-  //   },
-  //   component: () => import('@/view/login/login.vue')
-  // },
-  // {
-  //   path: '/news',
-  //   name: 'news',
-  //   component: Main,
-
-  //   meta: {
-  //     title: '练习',
-  //     hideInMenu: true
-  //   },
-  //   children: [
-  //     {
-  //       path: '',
-  //       name: 'newss',
-  //       meta: {
-  //         title: '练习'
-  //       },
-  //       component: () => import('@/view/game/news.vue'),
-  //     }]
-  // },
+  {
+    path: '/login',
+    name: 'login',
+    meta: {
+      title: 'Login - 登录',
+      hideInMenu: true
+    },
+    component: () => import('@/view/login/login.vue')
+  },
   {
     path: '/',
     name: '_home',
@@ -51,21 +32,15 @@ export default [
     },
     children: [
       {
-        path: '/',
-        name: 'index',
-        component: resolve => require(['@/views/home/home.vue'], resolve)
+        path: '/home',
+        name: 'home',
+        meta: {
+          hideInMenu: true,
+          title: '首页',
+          notCache: true
+        },
+        component: () => import('@/view/index/home')
       }
-      // {
-      //   path: '/home',
-      //   name: 'home',
-      //   meta: {
-      //     access: ['INTEGRAL_MANAGER', "GAME_MANAGER"],
-      //     hideInMenu: true,
-      //     title: '首页',
-      //     notCache: true
-      //   },
-      //   component: () => import('@/view/index/home')
-      // }
     ]
   }
 ]

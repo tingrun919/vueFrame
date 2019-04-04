@@ -1,6 +1,7 @@
 const path = require('path')
 const resolve = dir => path.join(__dirname, dir)
 const mockdata = require('./src/mock/index')
+// const proxy = require('./src/mock/index')
 module.exports = {
   publicPath: '/',
   outputDir: 'dist',

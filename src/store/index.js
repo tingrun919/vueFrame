@@ -1,19 +1,23 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import confAction from './modules/confAction'
-import createLogger from '@/libs/logger'
+
+import user from './module/user'
+import app from './module/app'
 
 Vue.use(Vuex)
 
-const debug = process.env.NODE_ENV !== 'production'
-
 export default new Vuex.Store({
-  modules: {
-    confAction,
-    test: '6',
-    // 基础URL带端口号
-    base8000: window.location.origin
+  state: {
+    //
   },
-  strict: debug,
-  plugins: debug ? [createLogger()] : []
+  mutations: {
+    //
+  },
+  actions: {
+    //
+  },
+  modules: {
+    user,
+    app
+  }
 })

@@ -8,7 +8,7 @@
   import { getDict } from "@/api/configure";
   import _ from "lodash";
   export default {
-    name: "Dict",
+    name: "DictSpan",
     props: ["code", "data", "value", "color", "parentCode"],
     data() {
       return {
