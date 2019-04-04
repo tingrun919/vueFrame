@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "fastclick": "^1.0.6",
     "iview": "^3.3.3",
     "js-cookie": "^2.2.0",
     "qs": "^6.7.0",
