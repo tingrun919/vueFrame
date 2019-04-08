@@ -1,6 +1,7 @@
 {
-  "name": "hybrid",
-  "version": "0.1.0",
+  "name": "{{projectName}}",
+  "version": "{{projectVersion}}",
+  "description":"{{projectDescription}}",
   "private": true,
   "scripts": {
     "serve": "standard --fix && vue-cli-service serve --open",
