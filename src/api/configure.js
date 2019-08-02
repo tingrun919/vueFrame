@@ -1,7 +1,7 @@
 import axios from '@/libs/api.request'
 import { DICT_PREFIX } from "@/config/constants";
 
-// 获取字典最后更新时间
+// 获取字典最后更新时间   
 export const getDictLastModifyDate = (date) => {
   return axios.request({
     url: `/configure/getDictLastModifyDate/${date}`
